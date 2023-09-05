@@ -1,0 +1,29 @@
+<html> 
+<body>
+<h1 style="text-align: center;fontstyle:  
+normal;color:rebeccapurple">Assignment</h1> 
+<head>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["login"].value;
+ let  y = document.forms["myForm"]["pass"].value;
+  if (x == "" ||y=="") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+
+<h2>JavaScript Validation</h2>
+
+<form name="myForm" action="index.html" onsubmit="return validateForm()" method="post">
+  Login_id: <input type="text" name="login">
+  password: <input type ="text" name = "pass">
+  <input type="submit" value="Submit">
+<input type = "reset" value = "clear all">
+</form>
+
+</body>
+</html>
+
